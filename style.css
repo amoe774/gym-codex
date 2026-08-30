@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    height: 80px;
+    background-color: #528bd1;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s ease-in-out;
+
+}
+.logo{
+    margin: 30px;
+}
+.navbar a{
+   color: #fff;
+   padding: 2rem;
+   text-decoration: none;
+  
+}
+.navbar a:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff; 
+}
+/*main content style*/
+.main-content{
+  margin: 2rem  3rem;
+}
+.change{
+    color:#528bd1;
+}
+.main-content h3{
+    margin-top: 20px;
+    
+}
+.join-btn{
+    margin-top: 10px;
+    padding: 15px 40px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: #528bd1;
+    transition: all .2s ease-in-out;
+}
+.join-btn:hover{
+    background-color: #0d70e9;
+    box-shadow: 0 0 10px #0d70e9;
+    cursor: pointer;
+}
+#close{
+    font-size: 40px;
+    padding: 40px;
+    color: #fff;
+    display: none;
+}
+#close:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff;
+}
+/*setting media screen for navbar links on small screens*/
+@media  screen and (max-width: 600px) {
+    #nav-links{
+        display: none;
+        position: absolute;
+        top: 20px;
+        background-color: #2371d0;
+        align-items: center;
+        margin-right: 5rem;
+        padding: 10px;
+    }
+    #nav-links a{
+        display: flex;
+        
+      
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #close{
+        display: block;
+    }
+    
+}
+
+/*css code for membership plans*/
+.h2{
+    text-align: center;
+    margin:  20px;
+    color: #528bd1;
+}
+.plans-display{
+    display: flex;
+    margin: 4rem;
+    gap: 4rem;
+}
+#basic-plan,#Intermediate-plan,#Pro-plan{
+    background-color: #5898e6;
+    padding: 40px 50px;
+    border-radius: 20px;
+    align-items: center;
+}
+.plans-display p{
+    color: #f6e9e9;
+    margin: 10px;
+}
+.plans-display button{
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+    background-color: #3c69a0;
+    transition: all .2s ease-in-out;
+}
+.plans-display button:hover{
+    cursor: pointer;
+    background-color: #0d70e9;
+}
+/*add hover effects for the cards*/
+
+/*media screen for small screens*/
+@media screen and (max-width: 780px){
+    .plans-display{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #basic-plan,#Intermediate-plan,#Pro-plan{
+        padding: 5px;
+    }
+}
+
+/*css code for the footer section*/
+
+.about-container{
+    background-color: #181717;
+    height: 15vh;
+}
