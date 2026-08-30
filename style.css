@@ -62,7 +62,7 @@
     text-shadow: 0 0 10px #fff;
 }
 /*setting media screen for navbar links on small screens*/
-@media  screen and (max-width: 600px) {
+@media  screen and (max-width: 700px) {
     #nav-links{
         display: none;
         position: absolute;
@@ -74,8 +74,10 @@
     }
     #nav-links a{
         display: flex;
-        
-      
+        flex-direction: column;
+    } 
+    #nav-links.active{
+        display: flex;
     }
     .main-content{
         display: flex;
