@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-.navbar{
+.navbar-links{
     height: 80px;
     background-color: #528bd1;
     align-items: center;
@@ -65,19 +65,20 @@
 @media  screen and (max-width: 700px) {
     #nav-links{
         display: none;
-        position: absolute;
-        top: 20px;
+        position: relative;
+        top: 30px;
         background-color: #2371d0;
         align-items: center;
-        margin-right: 5rem;
         padding: 10px;
     }
-    #nav-links a{
-        display: flex;
-        flex-direction: column;
-    } 
+    
+    
     #nav-links.active{
         display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        
     }
     .main-content{
         display: flex;
