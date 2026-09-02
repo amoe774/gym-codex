@@ -218,6 +218,8 @@ section{
     }
     
 }
+/*programs section*/
+
 /*static glow*/
 .glow-static{
     border: 0;
@@ -230,6 +232,16 @@ section{
     margin: 50px auto;
     display: flex;
     flex-direction: column;
+    background-color: rgb(215, 207, 207);
+    width: fit-content;
+    padding: 50px;
+    border-radius: 10px;
+}
+.programs-container h2{
+    text-align: center;
+    margin: 10px;
+    font-size: 34px;
+    color:#3b86e2;
 }
 /*css code for the footer section*/
 
