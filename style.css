@@ -218,6 +218,14 @@ section{
     }
     
 }
+/*static glow*/
+.glow-static{
+    border: 0;
+    height: 2px;
+    background: #3b86e2;
+    box-shadow: 0 0 10px #4aa8e2,0 0 20px #4aa8e2;
+
+}
 .programs-container{
     margin: 50px auto;
     display: flex;
