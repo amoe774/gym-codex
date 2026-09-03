@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+body{
+    position: sticky;
+}
 .navbar-links{
     height: 80px;
     background-color: #528bd1;
@@ -72,7 +75,7 @@ html{
 
 }
 /*setting media screen for navbar links on small screens*/
-@media  screen and (max-width: 700px) {
+@media  screen and (max-width: 850px) {
     #nav-links{
         display: none;
         position: relative;
@@ -232,7 +235,7 @@ section{
     margin: 50px auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(215, 207, 207);
+    background-color: rgb(239, 232, 232);
     width: fit-content;
     border-radius: 20px;
     padding: 50px;
@@ -279,7 +282,7 @@ section{
     z-index: 5;
     border-radius: 10px;
     offset-path: inset(0 round 20px);
-    offset-rotate: outo;
+    offset-rotate: auto;
     animation: trace 12s linear infinite;
  }
  
@@ -354,4 +357,11 @@ section{
 .all-about h2{
     margin: 10px;
     font-size: 24px;
+}
+/*media screen for footer section*/
+@media screen and (max-width: 850px){
+    .all-about{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
