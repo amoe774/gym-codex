@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+body{
+    background-image: url("images/gym2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 :root{
     --bg: #ffffff;
     --bg-card: #f5f7ff;
@@ -55,6 +63,9 @@
 /*main content style*/
 .main-content{
   margin: 2rem  3rem;
+   /* background-image: url("images/gym2.jpg"); */
+   background-size: cover;
+   background-position: center;
 }
 .change{
     color:#528bd1;
@@ -121,6 +132,9 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        background-size: cover;
+        background-position: center;
     }
     #close{
         display: block;
@@ -148,6 +162,7 @@ html{
     display: flex;
     margin: 4rem;
     gap: 4rem;
+    
 }
 #basic-plan{
     /* background-color: #5898e6; */
@@ -264,6 +279,11 @@ section{
     padding: 50px;
     position: relative;
     overflow: hidden;
+    background-image: url("images/gym1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 .programs-container h2{
@@ -299,9 +319,9 @@ section{
     top: 0;
     left: 0;
     width: 35%;
-    height: 2px;
-    background: #00bbff;
-    box-shadow:  0 0 10px #00bfff,0 0 20px #00bfff;
+    height: 5px;
+    background: #ffa500;
+    box-shadow:  0 0 10px #d08a08,0 0 20px #7d5306;
     z-index: 5;
     border-radius: 10px;
     offset-path: inset(0 round 20px);
@@ -346,6 +366,7 @@ section{
     rgba(0,191,255,0.3));
     display: flex;
     justify-content: center;
+   
 
 }
 .about-container::before{
