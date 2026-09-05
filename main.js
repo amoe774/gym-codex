@@ -6,3 +6,18 @@ const joinBtn = document.getElementById("join-btn");
 closeBtn.addEventListener("click", ()=>{
     navLinks.classList.toggle("active");
 });
+
+
+//adding animation event
+const reveals = document.querySelectorAll(".emerge");
+ const observer = new IntersectionObserver((entries) =>{
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("is-visible");
+        }
+
+    });
+}, {threshold: 0.15});
+
+reveals.forEach(item => observer.observe(item));
+

@@ -4,9 +4,15 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-body{
-    position: sticky;
+:root{
+    --bg: #ffffff;
+    --bg-card: #f5f7ff;
+    --text: #0a0e15;
+    --text-muted: #6b778d;
+    --primary: #233f9b;
+    --border: #dfe5f2;
 }
+
 .navbar-links{
     height: 80px;
     background-color: #528bd1;
@@ -16,8 +22,25 @@ body{
     transition: all .2s ease-in-out;
 
 }
+.navbar-links a{
+    flex: 1;
+    text-align: right;
+}
+#icon{
+    font-size: 40px;
+    margin: 10px;
+    background: var(--bg);
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+#icon:hover{
+    background: var(--text);
+    cursor: pointer; 
+}
 .logo{
     margin: 30px;
+    display: flex;
+    padding: 20px;
 }
 .navbar a{
    color: #fff;
@@ -46,7 +69,7 @@ body{
     outline: none;
     border: none;
     border-radius: 15px;
-    background-color: #528bd1;
+    background-color: var(--primary);
     transition: all .2s ease-in-out;
 }
 .join-btn:hover{
@@ -80,7 +103,7 @@ html{
         display: none;
         position: relative;
         top: 30px;
-        background-color: #2371d0;
+        background-color: var(--primary);;
         align-items: center;
         padding: 10px;
     }
@@ -365,3 +388,15 @@ section{
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+/*setting emerge box*/
+.emerge{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out,transform 0.6s ease-out;
+}
+.emerge.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
